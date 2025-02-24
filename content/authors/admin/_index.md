@@ -47,7 +47,7 @@ profiles:
     url: https://orcid.org/0000-0002-0695-9007
 
 interests:
-  - Complex Networks: Synchronization, Diffusion and Network flow
+  - Complex Networks -- Synchronization, Diffusion and Network flow
   - Disease Progression
   - Nonlinear Dynamics
 
