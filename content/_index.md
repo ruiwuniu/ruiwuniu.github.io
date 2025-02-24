@@ -35,9 +35,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am a researcher with a Ph.D. in Computational Mathematics from Wuhan University.
+    
+        My work explores the dynamics of complex systems, disease modeling, and network science. I recently finished my Research Associate position at the City University of Hong Kong.
         
         Please reach out to collaborate 😃
     design:
