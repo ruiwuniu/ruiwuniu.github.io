@@ -37,7 +37,11 @@ sections:
       text: |-
         I am a researcher with a Ph.D. in Computational Mathematics from Wuhan University.
     
-        My work explores the dynamics of complex systems, disease modeling, and network science. I recently finished my Research Associate position at the City University of Hong Kong.
+        My work explores the dynamics of complex systems, disease modeling, and network science.
+
+        I recently finished my Research Associate position at the City University of Hong Kong.
+
+        I am currently looking for the next posdoc opportunity.
         
         Please reach out to collaborate 😃
     design:
