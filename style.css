@@ -1241,10 +1241,118 @@ section {
   inset: 0;
 }
 
-/* Responsive padding */
+/* ============================================
+   MOBILE OPTIMIZATIONS (max-width: 480px)
+   ============================================ */
 @media (max-width: 480px) {
+  /* Nav — keep logo on one line */
   .nav-inner,
   .section-inner,
   .footer-inner { padding-left: var(--space-5); padding-right: var(--space-5); }
-  .pub-item { padding: var(--space-4) var(--space-5); }
+
+  .nav-sub { display: none; }
+
+  .nav-wordmark { font-size: var(--text-xs); letter-spacing: 0.08em; }
+
+  .nav-logo-mark { width: 28px; height: 28px; }
+
+  /* Hero — tighten up */
+  .hero {
+    padding: var(--space-8) 0 var(--space-12);
+    min-height: auto;
+  }
+
+  .hero-inner { gap: var(--space-8); }
+
+  .hero-name { font-size: clamp(2.4rem, 12vw, 3.2rem); }
+
+  .hero-bio { font-size: var(--text-sm); }
+
+  /* Stats — keep on one row */
+  .hero-stats {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: nowrap;
+  }
+
+  .stat-num { font-size: var(--text-lg); }
+  .stat-label { font-size: 0.65rem; }
+
+  /* CTA buttons — 2x2 grid */
+  .hero-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.7rem;
+    padding: var(--space-3) var(--space-3);
+    justify-content: center;
+    letter-spacing: 0.05em;
+  }
+
+  /* Portrait — tighter */
+  .portrait-frame { width: 220px; height: 260px; }
+
+  .portrait-badge {
+    bottom: -10px;
+    right: -8px;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .badge-affil { font-size: 0.6rem; }
+
+  /* Section headers */
+  .section-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+
+  /* Research cards — single column */
+  .research-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+  .research-card { padding: var(--space-5); }
+
+  /* Publications */
+  .pub-item {
+    padding: var(--space-4) var(--space-5);
+    grid-template-columns: 1fr auto;
+  }
+
+  /* Grants — single column */
+  .grants-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: var(--space-8); }
+
+  /* Scholar card numbers */
+  .scholar-num { font-size: clamp(2rem, 10vw, 3rem); }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  /* Timeline */
+  .timeline-cols { grid-template-columns: 1fr; gap: var(--space-8); }
+}
+
+/* Also handle narrow tablets (481-768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: var(--text-xs);
+    justify-content: center;
+  }
+
+  .portrait-frame { width: 240px; height: 290px; }
+
+  .research-grid { grid-template-columns: 1fr 1fr; }
+  .grants-grid { grid-template-columns: 1fr; }
 }
