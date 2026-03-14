@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruiwu (Richard) Niu — Researcher in Complex Networks & Epidemiology</title>
+<meta name="description" content="Academic website of Ruiwu (Richard) Niu, Lecturer at Hong Kong Shue Yan University, specializing in complex networks, mathematical epidemiology, and nonlinear dynamics.">
+<meta property="og:title" content="Ruiwu (Richard) Niu — Researcher in Complex Networks">
+<meta property="og:description" content="PhD in Computational Mathematics. Research in complex networks, epidemiology, and nonlinear dynamics.">
+<meta property="og:type" content="profile">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ruiwu Niu",
+  "alternateName": "Richard Niu",
+  "url": "#",
+  "email": "ruiwuniu@gmail.com",
+  "jobTitle": "Lecturer",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Hong Kong Shue Yan University",
+    "department": "Department of Applied Data Science"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Wuhan University" },
+    { "@type": "CollegeOrUniversity", "name": "Hubei University" }
+  ],
+  "knowsAbout": ["Complex Networks", "Mathematical Epidemiology", "Nonlinear Dynamics", "Machine Learning"],
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Ruiwu Niu — Home">
+      <!-- SVG Logo mark -->
+      <svg class="nav-logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="34" height="34" rx="4" stroke="currentColor" stroke-opacity="0.25" stroke-width="1"/>
+        <!-- Network node motif -->
+        <circle cx="18" cy="18" r="3.5" fill="var(--color-primary)"/>
+        <circle cx="8"  cy="10" r="2"   fill="var(--color-primary)" opacity="0.7"/>
+        <circle cx="28" cy="10" r="2"   fill="var(--color-primary)" opacity="0.7"/>
+        <circle cx="8"  cy="26" r="2"   fill="var(--color-amber)"   opacity="0.7"/>
+        <circle cx="28" cy="26" r="2"   fill="var(--color-amber)"   opacity="0.7"/>
+        <line x1="18" y1="18" x2="8"  y2="10" stroke="var(--color-primary)" stroke-width="1" opacity="0.5"/>
+        <line x1="18" y1="18" x2="28" y2="10" stroke="var(--color-primary)" stroke-width="1" opacity="0.5"/>
+        <line x1="18" y1="18" x2="8"  y2="26" stroke="var(--color-amber)"   stroke-width="1" opacity="0.5"/>
+        <line x1="18" y1="18" x2="28" y2="26" stroke="var(--color-amber)"   stroke-width="1" opacity="0.5"/>
+        <line x1="8"  y1="10" x2="28" y2="10" stroke="var(--color-primary)" stroke-width="0.5" opacity="0.3"/>
+        <line x1="8"  y1="26" x2="28" y2="26" stroke="var(--color-amber)"   stroke-width="0.5" opacity="0.3"/>
+      </svg>
+      <div>
+        <span class="nav-wordmark">R. NIU</span>
+        <span class="nav-sub">Complex Networks · Epidemiology</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#research" class="active">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#grants">Grants</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+        <!-- Moon icon (shown in dark mode) -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-tag">Lecturer · Hong Kong Shue Yan University</p>
+      <h1 class="hero-name" id="hero-name">
+        Ruiwu
+        <span class="hero-name-accent cursor-blink">Niu</span>
+      </h1>
+      <p class="hero-title">Dept. of Applied Data Science · HKSYU</p>
+      <p class="hero-bio">
+        Investigating the mathematical underpinnings of complex networked systems — from epidemic spreading and synchronization dynamics to adaptive diffusion and network flow optimization.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">233+</span>
+          <span class="stat-label">Citations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Grants</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="https://scholar.google.com.hk/citations?user=od8adXEAAAAJ&hl=zh-CN&oi=sra"
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://adsci.hksyu.edu/about-us/staff/detail/R_Niu"
+           target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          HKSYU Profile
+        </a>
+        <a href="https://ruiwuniu.github.io/connections/"
+           target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Network Viz
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Portrait -->
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <img 
+          src="./assets/portrait.jpg" 
+          alt="Portrait of Ruiwu (Richard) Niu"
+          class="portrait-img"
+          width="320" height="380"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <!-- Fallback avatar when image not found -->
+        <div class="portrait-fallback" style="width:100%; height:100%; background:var(--color-surface); border-radius:var(--radius-lg); border:1px solid var(--color-border); display:flex; align-items:center; justify-content:center;">
+          <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1" opacity="0.4" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div class="portrait-overlay"></div>
+        <div class="portrait-corner tl"></div>
+        <div class="portrait-corner tr"></div>
+        <div class="portrait-corner bl"></div>
+        <div class="portrait-corner br"></div>
+        <div class="portrait-badge">
+          <span class="badge-affil">
+            <strong>HKSYU</strong>
+            Dept. of Applied Data Science
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESEARCH INTERESTS ===================== -->
+<section class="research-section" id="research" aria-labelledby="research-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Research Interests</p>
+      <h2 class="section-title" id="research-title">Fields of Inquiry</h2>
+    </div>
+    <div class="research-grid reveal-stagger">
+
+      <div class="research-card">
+        <svg class="research-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="4" fill="currentColor" opacity="0.9"/>
+          <circle cx="6"  cy="12" r="2.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="34" cy="12" r="2.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="6"  cy="28" r="2.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="34" cy="28" r="2.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="20" cy="5"  r="2"   fill="currentColor" opacity="0.4"/>
+          <circle cx="20" cy="35" r="2"   fill="currentColor" opacity="0.4"/>
+          <line x1="20" y1="20" x2="6"  y2="12" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <line x1="20" y1="20" x2="34" y2="12" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <line x1="20" y1="20" x2="6"  y2="28" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <line x1="20" y1="20" x2="34" y2="28" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <line x1="20" y1="20" x2="20" y2="5"  stroke="currentColor" stroke-width="1"   opacity="0.3"/>
+          <line x1="20" y1="20" x2="20" y2="35" stroke="currentColor" stroke-width="1"   opacity="0.3"/>
+        </svg>
+        <p class="research-name">Complex Networks</p>
+        <p class="research-desc">Synchronization, diffusion and flow on multilayer and spatially embedded networks. Topological identification and reconfiguration.</p>
+      </div>
+
+      <div class="research-card">
+        <svg class="research-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M4 28 Q12 8 20 16 Q28 24 36 6" stroke="currentColor" stroke-width="2" fill="none" opacity="0.9"/>
+          <circle cx="4"  cy="28" r="2.5" fill="currentColor" opacity="0.7"/>
+          <circle cx="20" cy="16" r="2.5" fill="currentColor" opacity="0.7"/>
+          <circle cx="36" cy="6"  r="2.5" fill="currentColor" opacity="0.7"/>
+          <path d="M4 34 L36 34" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.3"/>
+          <path d="M4 34 L4 2"   stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.3"/>
+        </svg>
+        <p class="research-name">Mathematical Epidemiology</p>
+        <p class="research-desc">SEIR/SEIHR compartmental models, stochastic epidemic dynamics, COVID-19 modelling with migration and variants.</p>
+      </div>
+
+      <div class="research-card">
+        <svg class="research-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M4 20 Q10 6 16 20 Q22 34 28 20 Q34 6 40 20" stroke="currentColor" stroke-width="2" fill="none" opacity="0.9" clip-path="inset(0 6px 0 0)"/>
+          <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.3"/>
+          <circle cx="20" cy="4"  r="2" fill="currentColor" opacity="0.6"/>
+          <circle cx="20" cy="36" r="2" fill="currentColor" opacity="0.6"/>
+          <line x1="20" y1="4" x2="20" y2="36" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.25"/>
+        </svg>
+        <p class="research-name">Nonlinear Dynamics</p>
+        <p class="research-desc">Phase synchronization, bifurcation analysis, and adaptive processes in interconnected dynamical systems.</p>
+      </div>
+
+      <div class="research-card">
+        <svg class="research-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="4"  y="26" width="8" height="10" rx="1" fill="currentColor" opacity="0.5"/>
+          <rect x="16" y="18" width="8" height="18" rx="1" fill="currentColor" opacity="0.7"/>
+          <rect x="28" y="10" width="8" height="26" rx="1" fill="currentColor" opacity="0.9"/>
+          <path d="M4 8 L16 14 L28 6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.5"/>
+        </svg>
+        <p class="research-name">Machine Learning</p>
+        <p class="research-desc">Data-driven approaches to network analysis, diffusion processes, and predictive modelling of complex system behaviour.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section class="publications-section" id="publications" aria-labelledby="pub-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Selected Publications</p>
+      <h2 class="section-title" id="pub-title">Journal Papers</h2>
+    </div>
+
+    <div class="pub-list reveal-stagger">
+
+      <article class="pub-item">
+        <span class="pub-num">01</span>
+        <div class="pub-body">
+          <p class="pub-title">Designating Nodal States in Physical Flow Networks via Flow Rerouting</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Guanrong Chen, Xiaoqun Wu*, Jianwen Feng, Michaël Antonie van Wyk</p>
+          <p class="pub-venue">Under Review — 2025</p>
+        </div>
+        <span class="pub-badge review">Under Review</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">02</span>
+        <div class="pub-body">
+          <p class="pub-title">Stability Analysis and Periodic Results of an Epidemic Model with Two Competing Variants and Cross-Infections</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Yin-Chi Chan, Simin Liu, Eric W. M. Wong*, Michaël Antonie van Wyk</p>
+          <p class="pub-venue">Under Review — 2025</p>
+        </div>
+        <span class="pub-badge review">Under Review</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">03</span>
+        <div class="pub-body">
+          <p class="pub-title">Dynamics of a Susceptible-Infected-Recovered Model on Complex Networks with Interregional Migration</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Yin-Chi Chan, Eric W. M. Wong*, Simin Liu, Michaël Antonie van Wyk</p>
+          <p class="pub-venue">Physical Review E 110, 024304 — 2024</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">04</span>
+        <div class="pub-body">
+          <p class="pub-title">A Stochastic SEIHR Model for COVID-19 Data Fluctuations</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Eric W. M. Wong*, Yin-Chi Chan, Michaël Antonie van Wyk, Guanrong Chen</p>
+          <p class="pub-venue">Nonlinear Dynamics 106, 1311–1323 — 2021</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">05</span>
+        <div class="pub-body">
+          <p class="pub-title">Modeling the COVID-19 Pandemic Using an SEIHR Model With Human Migration</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Eric W. M. Wong*, Yin-Chi Chan, Michaël Antonie van Wyk, Guanrong Chen</p>
+          <p class="pub-venue">IEEE Access vol. 8, pp. 195503–195514 — 2020</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">06</span>
+        <div class="pub-body">
+          <p class="pub-title">Opinion Diffusion in Two-Layer Interconnected Networks</p>
+          <p class="pub-authors">Congying Liu, Xiaoqun Wu*, <strong>Ruiwu Niu</strong>, M. A. Aziz-Alaoui, Jinhu Lü</p>
+          <p class="pub-venue">IEEE Transactions on Circuits and Systems I vol. 68, no. 9 — 2021</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">07</span>
+        <div class="pub-body">
+          <p class="pub-title">Adaptive Diffusion Processes of Time-Varying Local Information on Networks</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Xiaoqun Wu*, Jun-an Lu, Jinhu Lü</p>
+          <p class="pub-venue">IEEE Transactions on Circuits and Systems II — 2019</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+      <article class="pub-item">
+        <span class="pub-num">08</span>
+        <div class="pub-body">
+          <p class="pub-title">Phase Synchronization on Spatially Embedded Duplex Networks with Total Cost Constraint</p>
+          <p class="pub-authors"><strong>Ruiwu Niu</strong>, Xiaoqun Wu*, Jun-an Lu, Jianwen Feng</p>
+          <p class="pub-venue">Chaos: An Interdisciplinary Journal of Nonlinear Science 28.9 — 2017</p>
+        </div>
+        <span class="pub-badge published">Published</span>
+      </article>
+
+    </div>
+
+    <div style="margin-top: var(--space-8); text-align: center;" class="reveal">
+      <a href="https://scholar.google.com.hk/citations?user=od8adXEAAAAJ&hl=zh-CN&oi=sra"
+         target="_blank" rel="noopener noreferrer" class="btn-outline">
+        View All 15 Publications on Google Scholar
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE & EDUCATION ===================== -->
+<section class="timeline-section" id="experience" aria-labelledby="exp-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Background</p>
+      <h2 class="section-title" id="exp-title">Experience &amp; Education</h2>
+    </div>
+    <div class="timeline-cols">
+
+      <!-- Experience -->
+      <div class="reveal">
+        <p class="timeline-block-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Professional
+        </p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <p class="entry-period">2022.11 — 2024.08</p>
+            <p class="entry-title">Research Associate</p>
+            <p class="entry-org">Department of Electrical Engineering<br>City University of Hong Kong</p>
+          </div>
+          <div class="timeline-entry">
+            <p class="entry-period">2019.11 — 2022.10</p>
+            <p class="entry-title">Associate Research Fellow</p>
+            <p class="entry-org">College of Mathematics and Statistics<br>Shenzhen University</p>
+          </div>
+          <div class="timeline-entry">
+            <p class="entry-period">2022.02 — 2022.06</p>
+            <p class="entry-title">Lecturer — Engineering Mathematics</p>
+            <p class="entry-org">Shenzhen University</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="reveal">
+        <p class="timeline-block-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education
+        </p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <p class="entry-period">2016.09 — 2019.06</p>
+            <p class="entry-title">PhD · Computational Mathematics</p>
+            <p class="entry-org">School of Mathematics and Statistics<br>Wuhan University · Advisor: Prof. Xiaoqun Wu</p>
+          </div>
+          <div class="timeline-entry">
+            <p class="entry-period">2013.09 — 2016.06</p>
+            <p class="entry-title">Master · Theoretical Physics</p>
+            <p class="entry-org">Faculty of Physics and Electronic Science<br>Hubei University · Advisor: Assoc. Prof. Gui-Jun Pan</p>
+          </div>
+          <div class="timeline-entry">
+            <p class="entry-period">2008.09 — 2012.06</p>
+            <p class="entry-title">Bachelor · Theoretical Physics</p>
+            <p class="entry-org">Faculty of Physics and Electronic Science<br>Hubei University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GRANTS ===================== -->
+<section class="grants-section" id="grants" aria-labelledby="grants-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Funding</p>
+      <h2 class="section-title" id="grants-title">Sponsored Research</h2>
+    </div>
+    <div class="grants-grid reveal-stagger">
+
+      <div class="grant-card">
+        <p class="grant-role">Principal Investigator</p>
+        <p class="grant-title">Spreading and Diffusion of Multilayer Complex Networks</p>
+        <div class="grant-meta">
+          <p class="grant-meta-item">Funder: <span>NSFC Grant No. 62006159</span></p>
+          <p class="grant-meta-item">Period: <span>2021.01 — 2023.12</span></p>
+          <p class="grant-meta-item">Amount: <span>CNY 240,000</span></p>
+        </div>
+      </div>
+
+      <div class="grant-card">
+        <p class="grant-role">Co-Investigator</p>
+        <p class="grant-title">Topological Identification and Reconfiguration on Multilayer Dynamical Networks</p>
+        <div class="grant-meta">
+          <p class="grant-meta-item">Funder: <span>NSFC Grant No. 61773294</span></p>
+          <p class="grant-meta-item">Period: <span>2018.01 — 2021.12</span></p>
+          <p class="grant-meta-item">Amount: <span>CNY 650,000</span></p>
+        </div>
+      </div>
+
+      <div class="grant-card">
+        <p class="grant-role">Co-Investigator</p>
+        <p class="grant-title">Analysis of Mobile Data Based on Complex Networks</p>
+        <div class="grant-meta">
+          <p class="grant-meta-item">Funder: <span>Hubei Province NSF (No. 2017CFA052)</span></p>
+          <p class="grant-meta-item">Period: <span>2017.01 — 2019.12</span></p>
+          <p class="grant-meta-item">Amount: <span>CNY 200,000</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="skills-section" aria-labelledby="skills-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Technical Stack</p>
+      <h2 class="section-title" id="skills-title">Programming &amp; Tools</h2>
+    </div>
+    <div class="skills-grid reveal-stagger">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">MATLAB</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">Fortran</span>
+      <span class="skill-tag">R</span>
+      <span class="skill-tag">Complex Networks</span>
+      <span class="skill-tag">ODE / PDE Systems</span>
+      <span class="skill-tag">Stochastic Modelling</span>
+      <span class="skill-tag">Graph Theory</span>
+      <span class="skill-tag">Epidemic Modelling</span>
+      <span class="skill-tag">Network Synchronization</span>
+      <span class="skill-tag">Numerical Methods</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 class="section-title" id="contact-title">Contact</h2>
+    </div>
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <p class="contact-intro">
+          Open to collaborations in complex networks, epidemiological modelling, and nonlinear dynamics research. Feel free to reach out for academic discussions or joint projects.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ruiwuniu@gmail.com" class="contact-link">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">ruiwuniu@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://scholar.google.com.hk/citations?user=od8adXEAAAAJ&hl=zh-CN&oi=sra"
+             target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <div>
+              <span class="contact-link-label">Google Scholar</span>
+              <span class="contact-link-value">233+ Citations</span>
+            </div>
+          </a>
+          <a href="https://adsci.hksyu.edu/about-us/staff/detail/R_Niu"
+             target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div>
+              <span class="contact-link-label">HKSYU Staff Profile</span>
+              <span class="contact-link-value">adsci.hksyu.edu</span>
+            </div>
+          </a>
+          <a href="https://ruiwuniu.github.io/connections/"
+             target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <div>
+              <span class="contact-link-label">Network Visualization</span>
+              <span class="contact-link-value">ruiwuniu.github.io/connections</span>
+            </div>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span class="contact-link-label">Address</span>
+              <span class="contact-link-value">5/F, High Block, Research Complex, HKSYU, 6 Wai Tsui Crescent, North Point, Hong Kong</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="scholar-card">
+          <span class="scholar-num"><span id="cite-count">233</span><span style="color:var(--color-amber);font-size:0.55em;vertical-align:super;margin-left:2px;">+</span></span>
+          <span class="scholar-label">Google Scholar Citations</span>
+          <div style="margin-top:var(--space-6);padding-top:var(--space-6);border-top:1px solid var(--color-divider);">
+            <div style="display:flex;justify-content:space-around;gap:var(--space-4);">
+              <div style="text-align:center;">
+                <span style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;color:var(--color-text);display:block;">13</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.1em;">Papers</span>
+              </div>
+              <div style="text-align:center;">
+                <span style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;color:var(--color-amber);display:block;">2</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.1em;">In Review</span>
+              </div>
+              <div style="text-align:center;">
+                <span style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;color:var(--color-text);display:block;">3</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.1em;">Grants</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://scholar.google.com.hk/citations?user=od8adXEAAAAJ&hl=zh-CN&oi=sra"
+             target="_blank" rel="noopener noreferrer" class="scholar-link">
+            Open Scholar Profile
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copy">
+      © 2026 Ruiwu (Richard) Niu &mdash; Hong Kong Shue Yan University
+    </p>
+    <p class="footer-credit">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">
+        Created with Perplexity Computer
+      </a>
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+/* ---- Theme toggle ---- */
+(function() {
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const root   = document.documentElement;
+  let theme = 'dark'; // default
+  root.setAttribute('data-theme', theme);
+
+  const sunSVG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+  const moonSVG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', theme);
+      toggle.innerHTML = theme === 'dark' ? moonSVG : sunSVG;
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+    });
+  }
+})();
+
+/* ---- Mobile nav ---- */
+(function() {
+  const btn   = document.getElementById('mobile-toggle');
+  const links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  // close on link click
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ---- Sticky nav shadow ---- */
+(function() {
+  const nav = document.getElementById('site-nav');
+  if (!nav) return;
+  const obs = new IntersectionObserver(
+    ([e]) => nav.classList.toggle('scrolled', e.intersectionRatio < 1),
+    { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+  );
+  obs.observe(nav);
+})();
+
+/* ---- Active nav link on scroll ---- */
+(function() {
+  const sections = document.querySelectorAll('section[id]');
+  const links    = document.querySelectorAll('.nav-links a[href^="#"]');
+  const activate = () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    links.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  };
+  window.addEventListener('scroll', activate, { passive: true });
+  activate();
+})();
+
+/* ---- Scroll reveal ---- */
+(function() {
+  const items = document.querySelectorAll('.reveal, .reveal-stagger');
+  if (!items.length) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  items.forEach(el => obs.observe(el));
+})();
+
+/* ---- Smooth scroll for in-page links ---- */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+/* ---- Animate citation counter on enter ---- */
+(function() {
+  const el = document.getElementById('cite-count');
+  if (!el) return;
+  let animated = false;
+  const obs = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting && !animated) {
+      animated = true;
+      let count = 0;
+      const target = 233;
+      const inc = Math.ceil(target / 60);
+      const timer = setInterval(() => {
+        count = Math.min(count + inc, target);
+        el.textContent = count;
+        if (count >= target) clearInterval(timer);
+      }, 18);
+    }
+  }, { threshold: 0.5 });
+  obs.observe(el);
+})();
+</script>
+
+</body>
+</html>
