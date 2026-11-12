@@ -33,7 +33,12 @@ applyMotion();
 async function startNetwork() {
   if (!canvas) return;
   // Pinned Three.js release; failure leaves the existing CSS grid intact.
-  const THREE = await import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js');
+  const THREE = await import('three');
+  const [{ LineSegments2 }, { LineSegmentsGeometry }, { LineMaterial }] = await Promise.all([
+    import('https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/lines/LineSegments2.js'),
+    import('https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/lines/LineSegmentsGeometry.js'),
+    import('https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/lines/LineMaterial.js')
+  ]);
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false, powerPreference: 'low-power' });
   renderer.setClearColor(0x000000, 0);
   const scene = new THREE.Scene();
@@ -47,13 +52,18 @@ async function startNetwork() {
   const edgeColors = new Float32Array(count * 4 * 6);
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute('position', new THREE.BufferAttribute(points, 3).setUsage(THREE.DynamicDrawUsage));
-  const pointMaterial = new THREE.PointsMaterial({ color: 0x39d460, size: 0.026, transparent: true, opacity: 0.52, depthWrite: false });
+  const pointMaterial = new THREE.PointsMaterial({ color: 0x39d460, size: 0.062, transparent: true, opacity: 0.52, depthWrite: false });
   group.add(new THREE.Points(geometry, pointMaterial));
-  const linesGeometry = new THREE.BufferGeometry();
-  linesGeometry.setAttribute('position', new THREE.BufferAttribute(edgePositions, 3).setUsage(THREE.DynamicDrawUsage));
-  linesGeometry.setAttribute('color', new THREE.BufferAttribute(edgeColors, 3).setUsage(THREE.DynamicDrawUsage));
-  const lineMaterial = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.26, depthWrite: false });
-  group.add(new THREE.LineSegments(linesGeometry, lineMaterial));
+  // Screen-space wide lines: native WebGL linewidth is ignored on most browsers.
+  const linesGeometry = new LineSegmentsGeometry();
+  linesGeometry.setPositions(edgePositions);
+  linesGeometry.setColors(edgeColors);
+  linesGeometry.attributes.instanceStart.data.setUsage(THREE.DynamicDrawUsage);
+  linesGeometry.attributes.instanceColorStart.data.setUsage(THREE.DynamicDrawUsage);
+  const lineMaterial = new LineMaterial({ linewidth: 2, vertexColors: true, transparent: true, opacity: 0.26, depthWrite: false });
+  const lines = new LineSegments2(linesGeometry, lineMaterial);
+  lines.frustumCulled = false;
+  group.add(lines);
   const baseColor = new THREE.Color();
   const forms = Array.from({ length: 3 }, () => new Float32Array(count * 3));
   for (let i = 0; i < count; i++) {
@@ -97,9 +107,9 @@ async function startNetwork() {
         edge++;
       }
     }
-    linesGeometry.setDrawRange(0, edge * 2);
-    linesGeometry.attributes.position.needsUpdate = true;
-    linesGeometry.attributes.color.needsUpdate = true;
+    linesGeometry.instanceCount = edge;
+    linesGeometry.attributes.instanceStart.data.needsUpdate = true;
+    linesGeometry.attributes.instanceColorStart.data.needsUpdate = true;
     group.rotation.set(0.25 + Math.sin(elapsed * 0.06) * 0.18, elapsed * 0.035, Math.sin(elapsed * 0.04) * 0.12);
     renderer.render(scene, camera);
   }
@@ -122,6 +132,8 @@ async function startNetwork() {
   function resize() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     renderer.setSize(window.innerWidth, window.innerHeight, false);
+    lineMaterial.resolution.set(window.innerWidth, window.innerHeight);
+    lineMaterial.linewidth = window.innerWidth < 640 ? 1.7 : 2;
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.position.z = camera.aspect < 0.8 ? 10 : 7.5;
     camera.updateProjectionMatrix();
